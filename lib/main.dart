@@ -1,4 +1,5 @@
 import 'package:chirality/pages/chat.dart';
+import 'package:chirality/styling/theme_dark.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,10 +13,7 @@ class Chirality extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Chirality',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: darkMode(),
       home: const Chat(),
     );
   }
